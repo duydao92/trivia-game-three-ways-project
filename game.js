@@ -1,4 +1,5 @@
 import {getClue as getClueFromPromise} from './promise-version.js'
+import {getClue as getClueFromAsyncFunction} from './async-await-version.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     document
@@ -31,6 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
             ).catch ((err) => console.log(err))
         }
     )
+    document
+        .getElementById("use-async-await")
+        .addEventListener("click", ()=>{
+            
+        })
 })
 
 
